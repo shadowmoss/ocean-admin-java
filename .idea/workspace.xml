@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9aa7418-6b63-4747-a62a-701bc0ae465f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ocean/OceanAdminApplication.java" afterDir="false" />
+    <list default="true" id="e9aa7418-6b63-4747-a62a-701bc0ae465f" name="Changes" comment="Origin Master">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,12 @@
     "last_opened_file_path": "D:/githubProject/JAVA/OceanFramework"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ocean.common.restful" />
+      <recent name="com.ocean.common.filter" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,8 +58,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689494483720</updated>
-      <workItem from="1689494487112" duration="457000" />
+      <workItem from="1689494487112" duration="844000" />
     </task>
+    <task id="LOCAL-00001" summary="Origin Master">
+      <created>1689495107737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689495107737</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Origin Master">
+      <created>1689495162791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689495162791</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +90,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Origin Master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Origin Master" />
   </component>
 </project>
