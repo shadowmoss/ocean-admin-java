@@ -12,16 +12,11 @@ buildscript{
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
     }
 }
-apply plugin:"java"
-apply plugin: 'org.springframework.boot'
-apply plugin: "io.spring.dependency-management"
-
 
 group 'com.ocean'
 version '1.0-SNAPSHOT'
 description("Ocean项目的根目录")
-sourceCompatibility = "1.8"
-targetCompatibility = "1.8"
+
 
 ext{
     mybatisPlusVersion = '3.4.3'
@@ -41,8 +36,10 @@ allprojects {
 // 所有子项目的公共配置
 subprojects {
     Project subproject->
-        def springBootProject = ['ocean-web','ocean-application','ocean-system-impl','ocean-common','ocean-security']
+        def springBootProject = ['ocean-web','ocean-application','ocean-system-impl','ocean-common','ocean-security','ocean-dil']
         apply plugin: 'java'
+        sourceCompatibility = "1.8"
+        targetCompatibility = "1.8"
         if(springBootProject.contains(subproject.name)){
             apply plugin: 'org.springframework.boot'
             apply plugin: "io.spring.dependency-management"
@@ -70,6 +67,7 @@ project('ocean-components:ocean-dil'){
 }
 project('ocean-system:ocean-system-impl'){
     apply plugin: 'java-library'
+    description("Ocean项目的系统管理业务模块")
     dependencies {
         api project(':ocean-components:ocean-web')
         api project(':ocean-components:ocean-dil')
@@ -77,14 +75,17 @@ project('ocean-system:ocean-system-impl'){
     }
 }
 project('ocean-components:ocean-common'){
+    description("Ocean项目的通用模块")
 }
 project(':ocean-application'){
     apply plugin: 'java-library'
+    description("Ocean项目的主启动模块、无实际业务功能")
     dependencies {
         api project(':ocean-system:ocean-system-impl')
     }
 }
 project(':ocean-components:ocean-security'){
+    description("Ocean项目的主要安全模块,负责URL访问权限,请求拦截等内容")
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-security'
     }
