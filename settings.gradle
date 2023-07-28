@@ -1,2 +1,11 @@
 rootProject.name = 'ocean-admin-java'
+include 'ocean-system'
+include 'ocean-components'
+include ':ocean-components:ocean-common'
+include ':ocean-components:ocean-security'
+include ':ocean-system:ocean-system-api'
+include ':ocean-system:ocean-system-impl'
+include 'ocean-application'
+include 'ocean-components:ocean-web'
+include':ocean-components:ocean-dil'
 

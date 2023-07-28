@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9aa7418-6b63-4747-a62a-701bc0ae465f" name="Changes" comment="Origin Master">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/develop_log/2023_07_28开发日志.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-application/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-application/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/src/main/java/com/ocean/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-web/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/web/filter/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/api/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/dto/UserLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ocean/OceanAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-application/src/main/java/com/ocean/OceanAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ocean/common/filter/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/web/filter/CorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ocean/common/restful/RestfulResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/restful/RestfulResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +49,79 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ocean-components">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+                <item name="ocean-application" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+                <item name="ocean-application" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+                <item name="ocean-components" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+                <item name="ocean-components" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+                <item name="ocean-components" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+                <item name="ocean-components" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ocean-admin-java" type="f1a62948:ProjectNode" />
+                <item name="ocean-components" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -39,16 +139,105 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/githubProject/JAVA/OceanFramework"
+    "last_opened_file_path": "D:/Work/JAVA/ocean-admin-java/ocean-components/ocean-orm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4413793",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "spring.configuration.checksum": "df8f742caa7e40e25c661da6058a4ac8"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\JAVA\ocean-admin-java\ocean-components\ocean-orm" />
+      <recent name="D:\Work\JAVA\ocean-admin-java\ocean-components\ocean-common\src\main\java\com\ocean\common" />
+      <recent name="D:\Work\JAVA\ocean-admin-java\ocean-system\ocean-system-impl" />
+      <recent name="D:\Work\JAVA\ocean-admin-java\ocean-system\ocean-system-api" />
+      <recent name="D:\Work\JAVA\ocean-admin-java\ocean-components\ocean-security" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\JAVA\ocean-admin-java\ocean-application\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ocean.common.restful" />
       <recent name="com.ocean.common.filter" />
     </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OceanAdminApplication (1)">
+    <configuration name="ocean-admin-java [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ocean-admin-java" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="OceanAdminApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ocean-admin-java.ocean-application.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.OceanAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OceanAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ocean-admin-java.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.OceanAdminApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ocean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ocean-admin-java" />
+        <item itemvalue="Gradle.ocean-admin-java [dependencies]" />
+        <item itemvalue="Spring Boot.OceanAdminApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,7 +247,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689494483720</updated>
-      <workItem from="1689494487112" duration="844000" />
+      <workItem from="1689494487112" duration="5565000" />
+      <workItem from="1689556099337" duration="4544000" />
+      <workItem from="1689651282472" duration="708000" />
+      <workItem from="1689667341271" duration="715000" />
+      <workItem from="1690451001527" duration="1413000" />
+      <workItem from="1690508462376" duration="13177000" />
     </task>
     <task id="LOCAL-00001" summary="Origin Master">
       <created>1689495107737</created>
@@ -74,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689495162791</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Origin Master">
+      <created>1689495341816</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689495341816</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +293,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Origin Master" />
     <option name="LAST_COMMIT_MESSAGE" value="Origin Master" />
   </component>
