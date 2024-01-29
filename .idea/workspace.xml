@@ -5,9 +5,161 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9aa7418-6b63-4747-a62a-701bc0ae465f" name="Changes" comment="Origin Master">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/develop_log/2023_07_30_开发日志.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/develop_log/2023_09_08开发日志.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-aop/src/main/java/com/ocean/config/OceanAOPConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-aop/src/main/java/com/ocean/core/aspects/MyAspects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/constants/DateConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/enums/CommonDeletedEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/enums/CommonResCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/exceptions/AccessTokenDeletedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/exceptions/AccessTokenExpiresTimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/exceptions/AdminUserNotExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/exceptions/AuthenticateFailureException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/exceptions/RefreshTokenExpireException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/exceptions/RefreshTokenNotExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/model/PageParamVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/restful/RestfulPageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/utils/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/src/main/java/com/ocean/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/src/main/java/com/ocean/config/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/src/main/java/com/ocean/core/fill/DefaultMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/src/main/java/com/ocean/core/model/BaseDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/src/test/java/MyBatisPlusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/config/SecurityProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/config/SercurityItemConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/config/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/authentication/OceanAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/authority/DefaultOceanAuthoritySecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/authority/OceanAuthoritySecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/constants/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/filter/OceanAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/model/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/utils/SecurityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-security/src/main/java/com/ocean/core/web/DefaultOceanWebSecurityCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/config/WebMMvcConfigruation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/web/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/web/swagger/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/api/oauth2/OAuth2Api.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/api/oauth2/dto/OAuth2AuthenticationAccessTokenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/api/permission/PermissionApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/MenuConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/MenuType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/MenuVisibleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/OAuth2ClientHeadersEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/OAuth2GrantType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/OceanSystemDefaultClientEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/OceanSystemResCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/RoleCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/RoleStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/enums/RoleTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/api/oauth2/OAuth2ApiImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/api/permission/PermissionApiImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/admin/auth/AuthorityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/admin/menu/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/admin/oauth2/OAuth2ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/admin/oauth2/OAuth2TokenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/admin/permission/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/admin/role/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/app/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/convert/AdminUserConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/convert/AuthorityConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/convert/MenuConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/convert/RoleConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/convert/SystemOAuth2ClientConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/convert/SystemOAuth2TokenConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/oauth2/SystemOAuth2AccessTokenMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/oauth2/SystemOAuth2ClientMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/oauth2/SystemOAuth2RefreshTokenMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/permission/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/permission/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/permission/SystemRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/permission/SystemUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/AdminUserDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/MenuDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/RoleDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/SystemOAuth2AccessTokenDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/SystemOAuth2ClientDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/SystemOAuth2RefreshTokenDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/SystemRoleMenuDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/SystemUserRoleDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/AdminUserPageResVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/AdminUserPageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/AdminUserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/UserCreateVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/UserLoginResVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/UserUpdateVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/auth/AuthenticatedUserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/auth/AuthenticatiedUserInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/BaseOAuth2ClientVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/CreateNewOAuth2ClientVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/OAuth2AccessTokenResVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/OAuth2ClientDetailsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/OAuth2ClientPageReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/OAuth2ClientPageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/RequestAccessTokenVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/oauth2/UpdateNewOAuth2ClientVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/AuthorityMenuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/MenuBaseVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/MenuCreateVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/MenuGetOneVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/MenuListVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/MenuResVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/MenuUpdateVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RoleBindMenuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RoleBindedMenuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RoleCreateVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RoleDeleteResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RoleGetOneVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RoleListVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RolePageReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RolePageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/RoleUpdateVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/UserBindRoleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/vo/permission/UserBindedRoleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/oauth2/OAuth2ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/oauth2/OAuth2ClientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/oauth2/OAuth2TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/oauth2/OAuth2TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/permission/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/permission/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/permission/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/permission/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/permission/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/permission/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/utils/AuthorityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/utils/TokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/resources/mapper/SystemOAuth2AccessTokenMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/resources/mapper/SystemRoleMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/resources/mapper/SystemUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/test/java/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/develop_log/2023_07_28开发日志.md" beforeDir="false" afterPath="$PROJECT_DIR$/develop_log/2023_07_28开发日志.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-application/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-application/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-application/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-components/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-components/ocean-common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/ocean-common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/restful/RestfulResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/ocean-common/src/main/java/com/ocean/common/restful/RestfulResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-components/ocean-dil/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/ocean-dil/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-components/ocean-security/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/ocean-security/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/web/filter/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-components/ocean-web/src/main/java/com/ocean/web/filter/MvcGolbalCorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/com/ocean/api/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-api/src/main/java/api/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-impl/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/controller/admin/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/dto/UserLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/dto/UserLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/model/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocean-system/ocean-system-impl/src/main/java/com/ocean/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +183,9 @@
         <task path="$PROJECT_DIR$/ocean-application">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/ocean-system/ocean-system-impl">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -48,18 +203,38 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../DevelopEnvrioment/JDK/src.zip!/java/time/LocalDateTime.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../DevelopEnvrioment/JDK/src.zip!/java/time/chrono/ChronoLocalDateTime.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../DevelopEnvrioment/JDK/src.zip!/java/util/Comparator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../DevelopEnvrioment/JDK/src.zip!/java/util/function/Function.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.78/8d7dcaa00465e40144a023ab542e07d09255f35b/tomcat-embed-core-9.0.78-sources.jar!/javax/servlet/http/HttpServletRequestWrapper.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.10/e3f0b8fa3bd5909fa46641272a47f5f0f5edbac9/spring-security-config-5.7.10-sources.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.10/e3f0b8fa3bd5909fa46641272a47f5f0f5edbac9/spring-security-config-5.7.10-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.10/e3f0b8fa3bd5909fa46641272a47f5f0f5edbac9/spring-security-config-5.7.10-sources.jar!/org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.10/e3f0b8fa3bd5909fa46641272a47f5f0f5edbac9/spring-security-config-5.7.10-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExceptionHandlingConfigurer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.7.10/e3f0b8fa3bd5909fa46641272a47f5f0f5edbac9/spring-security-config-5.7.10-sources.jar!/org/springframework/security/config/annotation/web/configurers/ServletApiConfigurer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.10/38a23e35551bcbd7ad0d9156da0965c03f1d9c15/spring-security-web-5.7.10-sources.jar!/org/springframework/security/web/servletapi/HttpServlet3RequestFactory.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.10/38a23e35551bcbd7ad0d9156da0965c03f1d9c15/spring-security-web-5.7.10-sources.jar!/org/springframework/security/web/servletapi/SecurityContextHolderAwareRequestFilter.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.10/38a23e35551bcbd7ad0d9156da0965c03f1d9c15/spring-security-web-5.7.10-sources.jar!/org/springframework/security/web/servletapi/SecurityContextHolderAwareRequestWrapper.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../PackageManager/gradle-7.4-idea-home/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.7.10/38a23e35551bcbd7ad0d9156da0965c03f1d9c15/spring-security-web-5.7.10-sources.jar!/org/springframework/security/web/util/matcher/RequestMatcher.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Se617cJzYH28SLMsgpkczIvpPn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,23 +242,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Work/JAVA/ocean-admin-java/ocean-components/ocean-orm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4413793",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "spring.configuration.checksum": "df8f742caa7e40e25c661da6058a4ac8"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/githubProject/SpringExample/spring-security-samples&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4413793&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;084d949cc1e9ace005eba5705ba17b61&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Work\JAVA\ocean-admin-java\ocean-components\ocean-orm" />
@@ -100,7 +287,30 @@
       <recent name="com.ocean.common.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ocean-admin-java:ocean-application [bootJar]">
+  <component name="RunManager" selected="Spring Boot.OceanAdminApplication (1)">
+    <configuration name="UserServiceTest.testFindOneUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":ocean-system:ocean-system-impl:test" />
+            <option value="--tests" />
+            <option value="&quot;UserServiceTest.testFindOneUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ocean-admin-java [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -113,27 +323,6 @@
         <option name="taskNames">
           <list>
             <option value="bootJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ocean-admin-java [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,6 +372,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ocean-admin-java:ocean-system:ocean-system-impl [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ocean-system/ocean-system-impl" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="OceanAdminApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ocean-admin-java.ocean-application.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.OceanAdminApplication" />
@@ -190,26 +400,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OceanAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ocean-admin-java.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocean.OceanAdminApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ocean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ocean-admin-java:ocean-system:ocean-system-impl [clean]" />
+        <item itemvalue="Gradle.UserServiceTest.testFindOneUser" />
         <item itemvalue="Gradle.ocean-admin-java:ocean-application [bootJar]" />
         <item itemvalue="Gradle.ocean-admin-java [bootJar]" />
         <item itemvalue="Gradle.ocean-admin-java" />
-        <item itemvalue="Gradle.ocean-admin-java [dependencies]" />
-        <item itemvalue="Spring Boot.OceanAdminApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +423,55 @@
       <workItem from="1689651282472" duration="708000" />
       <workItem from="1689667341271" duration="715000" />
       <workItem from="1690451001527" duration="1413000" />
-      <workItem from="1690508462376" duration="14993000" />
+      <workItem from="1690508462376" duration="19955000" />
+      <workItem from="1690617028970" duration="765000" />
+      <workItem from="1690684922586" duration="1661000" />
+      <workItem from="1690702613046" duration="1734000" />
+      <workItem from="1690771623770" duration="15307000" />
+      <workItem from="1690855209215" duration="15590000" />
+      <workItem from="1690959264280" duration="7936000" />
+      <workItem from="1691043629892" duration="4516000" />
+      <workItem from="1691112893294" duration="3086000" />
+      <workItem from="1691208127700" duration="4207000" />
+      <workItem from="1691289706374" duration="6760000" />
+      <workItem from="1691373697440" duration="4526000" />
+      <workItem from="1691563127120" duration="5111000" />
+      <workItem from="1691650055246" duration="8791000" />
+      <workItem from="1691737250481" duration="4195000" />
+      <workItem from="1691820476386" duration="11483000" />
+      <workItem from="1691909447233" duration="7845000" />
+      <workItem from="1691980530592" duration="14689000" />
+      <workItem from="1692174081891" duration="2424000" />
+      <workItem from="1692253024251" duration="11246000" />
+      <workItem from="1692367370361" duration="969000" />
+      <workItem from="1692431147788" duration="6862000" />
+      <workItem from="1692512513130" duration="6940000" />
+      <workItem from="1692582457982" duration="16713000" />
+      <workItem from="1692669281222" duration="301000" />
+      <workItem from="1692670859773" duration="21683000" />
+      <workItem from="1692858647025" duration="14017000" />
+      <workItem from="1692944758870" duration="6226000" />
+      <workItem from="1693208161020" duration="4253000" />
+      <workItem from="1693277037823" duration="11218000" />
+      <workItem from="1693551461856" duration="5363000" />
+      <workItem from="1693639743942" duration="6803000" />
+      <workItem from="1693701669269" duration="3675000" />
+      <workItem from="1693811803917" duration="1794000" />
+      <workItem from="1694143636245" duration="5697000" />
+      <workItem from="1694241495592" duration="8752000" />
+      <workItem from="1694309882773" duration="11458000" />
+      <workItem from="1694415142027" duration="1857000" />
+      <workItem from="1694500531936" duration="2907000" />
+      <workItem from="1695000031172" duration="12750000" />
+      <workItem from="1695263240021" duration="12233000" />
+      <workItem from="1695365527146" duration="621000" />
+      <workItem from="1695454637891" duration="2195000" />
+      <workItem from="1695711169452" duration="3674000" />
+      <workItem from="1695779078139" duration="6754000" />
+      <workItem from="1695884787400" duration="8447000" />
+      <workItem from="1695970307226" duration="8446000" />
+      <workItem from="1696060012844" duration="3165000" />
+      <workItem from="1701835905069" duration="7215000" />
     </task>
     <task id="LOCAL-00001" summary="Origin Master">
       <created>1689495107737</created>
@@ -256,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690527189204</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Origin Master">
+      <created>1690529021701</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690529021701</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,5 +529,21 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Origin Master" />
     <option name="LAST_COMMIT_MESSAGE" value="Origin Master" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.catalina.connector.RequestFacade" memberName="request" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="createNewOAuth2ClientVO.description" />
+        <watch expression="createNewOAuth2ClientVO.refreshTokenValiditySeconds" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ocean_admin_java$OceanAdminApplication__1_.ic" NAME="OceanAdminApplication (1) Coverage Results" MODIFIED="1690962934188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

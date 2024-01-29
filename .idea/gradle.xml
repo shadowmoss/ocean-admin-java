@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ocean-application" />
             <option value="$PROJECT_DIR$/ocean-components" />
+            <option value="$PROJECT_DIR$/ocean-components/ocean-aop" />
             <option value="$PROJECT_DIR$/ocean-components/ocean-common" />
             <option value="$PROJECT_DIR$/ocean-components/ocean-dil" />
             <option value="$PROJECT_DIR$/ocean-components/ocean-security" />

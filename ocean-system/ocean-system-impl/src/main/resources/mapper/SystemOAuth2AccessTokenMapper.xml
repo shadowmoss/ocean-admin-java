@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ocean.mapper.oauth2.SystemOAuth2AccessTokenMapper">
+    <select id="authenticationUserByAccessToken" resultType="api.oauth2.dto.OAuth2AuthenticationAccessTokenDTO">
+        SELECT
+            user.id,
+            user.username,
+            soat.access_token
+        FROM
+            system_oauth2_access_token soat
+        INNER JOIN user ON soat.user_id = user.id
+        WHERE
+            soat.deleted = 0
+            <if test="token !=null and token != ''">
+               AND soat.access_token = #{token}
+            </if>
+    </select>
+</mapper>

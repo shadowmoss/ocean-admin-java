@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ocean.mapper.permission.SystemRoleMenuMapper">
+    <select id="listRoleBindedMenus" resultType="com.ocean.model.vo.permission.RoleBindedMenuVO">
+    SELECT
+        sm.id,
+        sm.name,
+        sm.permission,
+        sm.parent_id
+    FROM
+        system_role_menu srm
+    INNER JOIN system_menu sm ON srm.menu_id = sm.id
+    INNER JOIN system_role sr ON srm.role_id = sr.id
+    WHERE
+        1=1
+    AND srm.deleted = 0
+    <if test="id != null">
+        AND srm.role_id = #{id}
+    </if>
+    </select>
+    <select id="getAllPermissions" resultType="com.ocean.model.entity.MenuDO">
+    SELECT
+        DISTINCT
+        sm.id,
+        sm.name,
+        sm.permission,
+        sm.type,
+        sm.sort,
+        sm.parent_id,
+        sm.path,
+        sm.icon,
+        sm.component,
+        sm.component_name,
+        sm.status,
+        sm.visible,
+        sm.keep_alive,
+        sm.always_show,
+        sm.create_time,
+        sm.update_time,
+        sm.creator,
+        sm.updater,
+        sm.deleted
+    FROM
+        system_menu sm
+    INNER JOIN system_role_menu srm ON srm.menu_id = sm.id
+    <where>
+        AND sm.deleted = 0
+        AND srm.deleted = 0
+        <if test="roleIds.size() > 0">
+            AND srm.role_id in
+            <foreach item="role" index="index" collection="roleIds" open="(" separator="," close=")">
+                #{role}
+            </foreach>
+        </if>
+    </where>
+    </select>
+    <select id="selectExist" resultType="com.ocean.model.entity.SystemRoleMenuDO">
+        SELECT
+            srm.id,
+            srm.role_id,
+            srm.menu_id,
+            srm.creator,
+            srm.create_time,
+            srm.updater,
+            srm.update_time,
+            srm.deleted
+        FROM
+            system_role_menu srm
+        WHERE
+            srm.deleted = 1
+        <if test="menuId != null">
+            AND srm.menu_id = #{menuId}
+        </if>
+        <if test="roleId != null">
+            AND srm.role_id = #{roleId}
+        </if>
+    </select>
+    <update id="updateDeleted">
+        UPDATE
+            system_role_menu srm
+        SET
+            srm.deleted = 0
+        WHERE
+            srm.id = #{oldData.id}
+    </update>
+    <select id="getAllMenusByRoles" resultType="com.ocean.model.entity.MenuDO">
+        SELECT
+            DISTINCT
+            sm.id,
+            sm.name,
+            sm.permission,
+            sm.type,
+            sm.sort,
+            sm.parent_id,
+            sm.path,
+            sm.icon,
+            sm.component,
+            sm.component_name,
+            sm.component,
+            sm.status,
+            sm.visible,
+            sm.keep_alive,
+            sm.always_show
+        FROM
+        system_menu sm
+        INNER JOIN system_role_menu srm ON sm.id = srm.menu_id
+        WHERE
+            sm.deleted = 0
+          AND
+            srm.deleted = 0
+        <if test="menuTypes != null and menuTypes.size() > 0">
+          AND sm.type IN
+          <foreach item="type" index="index" collection="menuTypes" open="(" separator="," close=")">
+            #{type}
+          </foreach>
+        </if>
+        <if test="roleIds.size() > 0">
+            AND srm.role_id IN
+            <foreach item="role" index="index" collection="roleIds" open="(" separator="," close=")">
+                #{role}
+            </foreach>
+        </if>
+    </select>
+</mapper>

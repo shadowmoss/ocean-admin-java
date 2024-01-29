@@ -22,6 +22,8 @@ ext{
     mybatisPlusVersion = '3.4.3'
     jwtVersion = "3.8.2"
     mysqlConnectorVersion = '8.0.27'
+    knife4jVersion = '4.1.0'
+    mapStructVersion = '1.5.5.Final'
 }
 allprojects {
     repositories {
@@ -40,13 +42,23 @@ subprojects {
         apply plugin: 'java'
         sourceCompatibility = "1.8"
         targetCompatibility = "1.8"
+        apply plugin: 'org.springframework.boot'
+        apply plugin: "io.spring.dependency-management"
         if(springBootProject.contains(subproject.name)){
-            apply plugin: 'org.springframework.boot'
-            apply plugin: "io.spring.dependency-management"
             dependencies {
-                implementation "org.projectlombok:lombok"
-                annotationProcessor "org.projectlombok:lombok"
+                implementation "org.springframework.boot:spring-boot-starter-test"
             }
+        }
+        dependencies {
+            implementation "org.projectlombok:lombok"
+            annotationProcessor "org.projectlombok:lombok"
+            testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+            testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+            implementation 'org.mapstruct:mapstruct:'+rootProject.ext.mapStructVersion
+            annotationProcessor 'org.mapstruct:mapstruct-processor:'+rootProject.ext.mapStructVersion
+        }
+        test {
+            useJUnitPlatform()
         }
 }
 // 子项目的特定配置
@@ -55,6 +67,8 @@ project(':ocean-components:ocean-web'){
     description("Ocean项目的Web组件，主要涉及Web项目的跨域配置、全局异常拦截、等等")
     dependencies {
         api "org.springframework.boot:spring-boot-starter-web"
+        api "com.github.xiaoymin:knife4j-openapi3-spring-boot-starter:$rootProject.ext.knife4jVersion"
+        implementation project(':ocean-components:ocean-common')
     }
 }
 project('ocean-components:ocean-dil'){
@@ -62,31 +76,59 @@ project('ocean-components:ocean-dil'){
     description("Ocean项目的数据交互层")
     dependencies {
         api 'com.baomidou:mybatis-plus-boot-starter:' + rootProject.ext.mybatisPlusVersion
+        api 'com.baomidou:mybatis-plus-boot-starter-test:'+ rootProject.ext.mybatisPlusVersion
         runtimeOnly 'mysql:mysql-connector-java:'+rootProject.ext.mysqlConnectorVersion
+        implementation project(":ocean-components:ocean-common")
     }
 }
 project('ocean-system:ocean-system-impl'){
     apply plugin: 'java-library'
     description("Ocean项目的系统管理业务模块")
     dependencies {
+        implementation project(':ocean-system:ocean-system-api')
         api project(':ocean-components:ocean-web')
         api project(':ocean-components:ocean-dil')
         implementation project(':ocean-components:ocean-common')
+        api project(':ocean-components:ocean-security')
+        api project(":ocean-components:ocean-aop")
     }
 }
 project('ocean-components:ocean-common'){
+    apply plugin: 'java-library'
     description("Ocean项目的通用模块")
+    dependencies {
+
+    }
 }
 project(':ocean-application'){
     apply plugin: 'java-library'
     description("Ocean项目的主启动模块、无实际业务功能")
     dependencies {
         api project(':ocean-system:ocean-system-impl')
+
     }
 }
 project(':ocean-components:ocean-security'){
+    apply plugin: 'java-library'
     description("Ocean项目的主要安全模块,负责URL访问权限,请求拦截等内容")
     dependencies {
-        implementation 'org.springframework.boot:spring-boot-starter-security'
+        api 'org.springframework.boot:spring-boot-starter-security'
+        implementation project(':ocean-components:ocean-web')
+        implementation project(':ocean-system:ocean-system-api')
+        implementation project(":ocean-components:ocean-common")
+    }
+}
+project(':ocean-components:ocean-aop'){
+    apply plugin: 'java-library'
+    description("Ocean项目的AOP切面编程模块,主要负责切面编程")
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-aop'
+    }
+}
+project(':ocean-system:ocean-system-api'){
+    apply plugin: 'java-library'
+    description("Ocean项目的系统层的APi接口模块,主要用于定义系统内部模块传递信息的接口")
+    dependencies {
+        implementation project(':ocean-components:ocean-common')
     }
 }

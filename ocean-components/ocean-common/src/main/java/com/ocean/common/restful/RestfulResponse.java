@@ -1,5 +1,6 @@
 package com.ocean.common.restful;
 
+import com.ocean.common.enums.CommonResCode;
 import lombok.Data;
 
 /**
@@ -41,10 +42,17 @@ public class RestfulResponse<T> {
         this.data = data;
     }
     public static <T> RestfulResponse<T> ok(String msg,T data){
-        return new RestfulResponse<>(200,msg,true,data);
+        return new RestfulResponse<>(CommonResCode.REQ_SUCCESS.code, msg,true,data);
     }
 
     public static <T> RestfulResponse<T> fail(String msg,T data){
-        return new RestfulResponse<>(201,msg,true,data);
+        return new RestfulResponse<>(CommonResCode.REQ_FAILURE.code, msg,false,data);
+    }
+
+    public static <T> RestfulResponse<T> fail(String msg,Integer code,T data){
+        return new RestfulResponse<>(code,msg,false,data);
+    }
+    public static <T> RestfulResponse<T> ok(String msg,Integer code,T data){
+        return new RestfulResponse<>(code,msg,true,data);
     }
 }
