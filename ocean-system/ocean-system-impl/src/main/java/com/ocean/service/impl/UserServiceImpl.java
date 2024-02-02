@@ -163,4 +163,14 @@ public class UserServiceImpl implements UserService{
         }
         return null;
     }
+
+    @Override
+    public RestfulResponse<String> register(UserRegisterVO userRegisterVO) {
+        UserCreateVO vo =  AdminUserConvert.INSTANCE.RegisterTOCreate(userRegisterVO);
+        Long userId = createUser(vo);
+        if(userId>=0){
+            return RestfulResponse.ok(OceanSystemResCode.REQUEST_SUCCESS.description,OceanSystemResCode.REQUEST_SUCCESS.code,OceanSystemResCode.REQUEST_SUCCESS.description);
+        }
+        return RestfulResponse.fail(OceanSystemResCode.REGISTER_ERROR.description,OceanSystemResCode.REGISTER_ERROR.code,OceanSystemResCode.REGISTER_ERROR.description);
+    }
 }

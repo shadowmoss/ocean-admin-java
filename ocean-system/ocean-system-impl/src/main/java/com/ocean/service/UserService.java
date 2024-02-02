@@ -28,4 +28,6 @@ public interface UserService {
     RestfulResponse<String> logout();
 
     AdminUserDO authenticateUser(String username, String password);
+
+    RestfulResponse<String> register(UserRegisterVO userRegisterVO);
 }

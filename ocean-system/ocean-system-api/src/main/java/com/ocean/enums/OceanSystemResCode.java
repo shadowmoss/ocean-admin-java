@@ -4,6 +4,7 @@ package com.ocean.enums;
  * @author ltx
  */
 public enum OceanSystemResCode {
+    REQUEST_SUCCESS(1000000,"请求成功"),
     LOGIN_ERROR(1000001,"登录错误"),
     LOGIN_SUCCESS(1000002,"登录成功"),
     AUTHENTICATION_USER_PERMISSION(1000003,"认证用户权限返回成功"),
@@ -14,7 +15,9 @@ public enum OceanSystemResCode {
 
     OAUTH2_CLIENT_UPDATE_FAILURE(2000002,"OAuth2客户端更新失败"),
 
-    OAUTH2_CLIENT_DELETE_FAILURE(2000003,"OAuth2客户端删除失败")
+    OAUTH2_CLIENT_DELETE_FAILURE(2000003,"OAuth2客户端删除失败"),
+
+    REGISTER_ERROR(3000001,"注册失败");
     ;
 
     public int code;
