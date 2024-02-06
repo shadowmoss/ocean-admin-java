@@ -1,9 +1,7 @@
 package com.ocean.web.exception;
 
 import com.ocean.common.enums.CommonResCode;
-import com.ocean.common.exceptions.AccessTokenDeletedException;
-import com.ocean.common.exceptions.AccessTokenExpiresTimeException;
-import com.ocean.common.exceptions.AdminUserNotExistException;
+import com.ocean.common.exceptions.*;
 import com.ocean.common.restful.RestfulResponse;
 import com.ocean.utils.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -43,6 +41,16 @@ public class GlobalExceptionHandler {
         log.error("当前发生了认证用户不存在的异常", e);
         return RestfulResponse.fail(CommonResCode.ADMIN_USER_NOT_EXIST.description, CommonResCode.ADMIN_USER_NOT_EXIST.code, CommonResCode.ADMIN_USER_NOT_EXIST.description);
     }
+    @ExceptionHandler(value = RefreshTokenExpireException.class)
+    public RestfulResponse<String> refreshTokenExpiresTimeHandler(Exception e){
+        log.error("当前发生了刷新令牌过期的异常",e);
+        return RestfulResponse.fail(CommonResCode.REFRESH_TOKEN_EXPIRE.description,CommonResCode.REFRESH_TOKEN_EXPIRE.code,CommonResCode.REFRESH_TOKEN_EXPIRE.description);
+    }
+    @ExceptionHandler(value = RefreshTokenNotExistException.class)
+    public RestfulResponse<String> refreshTokenDeletedHandler(Exception e){
+        log.error("当前发生了刷新令牌过期的异常",e);
+        return RestfulResponse.fail(CommonResCode.REFRESH_TOKEN_DELETED.description,CommonResCode.REFRESH_TOKEN_DELETED.code,CommonResCode.REFRESH_TOKEN_DELETED.description);
+    }
     public void handlerAccessTokenException(HttpServletResponse response, Exception e) {
         response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
         response.setHeader("Access-Control-Allow-Origin", "*");
@@ -55,20 +63,32 @@ public class GlobalExceptionHandler {
             if(e instanceof AccessTokenExpiresTimeException){
                 RestfulResponse<String> stringRestfulResponse = accessTokenExpiresTimeExceptionHandler(e);
                 String result = JsonUtils.writeToString(stringRestfulResponse);
-                response.setStatus(stringRestfulResponse.getCode());
                 writer.write(result);
-                writer.flush();
             }
             if(e instanceof  AccessTokenDeletedException){
                 RestfulResponse<String> restfulResponse = accessTokenDeletedHandler(e);
                 String result = JsonUtils.writeToString(restfulResponse);
-                response.setStatus(restfulResponse.getCode());
                 writer.write(result);
-                writer.flush();
             }
+            if(e instanceof RefreshTokenExpireException){
+                RestfulResponse<String> stringRestfulResponse = refreshTokenExpiresTimeHandler(e);
+                String result = JsonUtils.writeToString(stringRestfulResponse);
+                writer.write(result);
+            }
+            if(e instanceof RefreshTokenNotExistException){
+                RestfulResponse<String> stringRestfulResponse = refreshTokenDeletedHandler(e);
+                String result = JsonUtils.writeToString(stringRestfulResponse);
+                writer.write(result);
+            }
+            writer.flush();
         } catch (IOException ex) {
             throw new RuntimeException(ex);
+        }finally {
+            try {
+                writer.close();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         }
-
     }
 }

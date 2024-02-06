@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * @author ltx
  */
-@Component
+//@Component
 public class MvcGolbalCorFilter extends OncePerRequestFilter {
 
     @Override
