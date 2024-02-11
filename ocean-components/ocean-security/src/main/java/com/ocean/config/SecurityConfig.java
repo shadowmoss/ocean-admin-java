@@ -67,7 +67,7 @@ public class SecurityConfig {
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                // 声明创建一个AuthorityFilter
+                // 这里相当于声明创建一个AuthorityFilter
                 .authorizeHttpRequests()
                 // 配置需要进行验证的RequestMatcher
                 .antMatchers(HttpMethod.GET,
@@ -85,7 +85,8 @@ public class SecurityConfig {
                 permitAll()
                 .antMatchers(
                         "/user/login",
-                        "/oauth2/token/get"
+                        "/oauth2/token/get",
+                        "/user/register"
                 ).permitAll()
                 .anyRequest()
                 // 表示任何请求都需要进行认证才能访问
@@ -124,4 +125,10 @@ public class SecurityConfig {
         return source;
 
     }
+
+//    @Bean
+//    public FilterChainProxy getFilterChainProxy(WebSecurity webSecurity){
+//        webSecurity.build();
+//        return null;
+//    }
 }

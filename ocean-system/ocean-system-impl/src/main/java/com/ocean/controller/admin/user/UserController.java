@@ -36,6 +36,11 @@ public class UserController {
        return userService.login(userLoginDTO);
     }
 
+    @PostMapping("/register")
+    @Operation(summary = "用户注册")
+    public RestfulResponse<String> register(@RequestBody UserRegisterVO userRegisterVO){
+       return userService.register(userRegisterVO);
+    }
 
     @PostMapping("/logout")
     @Operation(summary = "用户登出")
