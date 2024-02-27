@@ -9,4 +9,5 @@ include 'ocean-application'
 include 'ocean-components:ocean-web'
 include':ocean-components:ocean-dil'
 include ':ocean-components:ocean-aop'
+include 'ocean-components:ocean-dil-permission'
 

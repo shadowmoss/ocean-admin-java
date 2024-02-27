@@ -125,6 +125,13 @@ project(':ocean-components:ocean-aop'){
         implementation 'org.springframework.boot:spring-boot-starter-aop'
     }
 }
+project(':ocean-components:ocean-dil-permission'){
+    apply plugin: 'java-library'
+    description("Ocean数据权限模块")
+    dependencies {
+        api project(':ocean-components:ocean-dil')
+    }
+}
 project(':ocean-system:ocean-system-api'){
     apply plugin: 'java-library'
     description("Ocean项目的系统层的APi接口模块,主要用于定义系统内部模块传递信息的接口")
