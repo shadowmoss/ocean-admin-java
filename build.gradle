@@ -88,6 +88,7 @@ project('ocean-system:ocean-system-impl'){
         implementation project(':ocean-system:ocean-system-api')
         api project(':ocean-components:ocean-web')
         api project(':ocean-components:ocean-dil')
+        implementation project(':ocean-components:ocean-dil-permission')
         implementation project(':ocean-components:ocean-common')
         api project(':ocean-components:ocean-security')
         api project(":ocean-components:ocean-aop")
@@ -130,6 +131,8 @@ project(':ocean-components:ocean-dil-permission'){
     description("Ocean数据权限模块")
     dependencies {
         api project(':ocean-components:ocean-dil')
+        implementation project(":ocean-components:ocean-security")
+        implementation project(":ocean-system:ocean-system-api")
     }
 }
 project(':ocean-system:ocean-system-api'){

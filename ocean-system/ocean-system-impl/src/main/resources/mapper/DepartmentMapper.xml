@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ocean.mapper.dept.DepartmentMapper">
+    <resultMap id="departmentTree" type="com.ocean.controller.admin.dept.vo.DepartmentVO">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="sort" property="sort"/>
+        <result column="leader_id" property="leaderId"/>
+        <result column="create_time" property="createTime"/>
+        <collection property="children" javaType="java.util.ArrayList" column="id" ofType="com.ocean.controller.admin.dept.vo.DepartmentVO" select="findChildDept">
+            <id column="id" property="id"/>
+            <result column="name" property="name"/>
+            <result column="parent_id" property="parentId"/>
+            <result column="sort" property="sort"/>
+            <result column="leader_id" property="leaderId"/>
+            <result column="create_time" property="createTime"/>
+        </collection>
+    </resultMap>
+    <select id="listDepartment" resultMap="departmentTree">
+        SELECT
+        sd.id id,
+        sd.name name,
+        sd.parent_id parent_id,
+        sd.sort sort,
+        sd.leader_id leader_id,
+        sd.create_time create_time
+        FROM
+        system_dept sd
+        WHERE
+        1=1
+        <choose>
+            <when test="name != null and name != ''">
+                AND sd.name like CONCAT('%',#{name},'%')
+            </when>
+        </choose>
+    </select>
+    <select id="findChildDept" resultType="com.ocean.controller.admin.dept.vo.DepartmentVO">
+        SELECT
+        sd.id id,
+        sd.name name,
+        sd.parent_id parent_id,
+        sd.sort sort,
+        sd.leader_id leader_id,
+        sd.create_time create_time
+        FROM
+        system_dept sd
+        WHERE
+        sd.parent_id = #{id}
+    </select>
+</mapper>

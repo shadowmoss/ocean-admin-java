@@ -41,10 +41,10 @@ public class OceanAuthenticationFilter extends OncePerRequestFilter {
             try{
                 // 当前token存在,根据token查询是哪一个用户,生成该用于存入,SecurityContext中。
                 LoginUser loginUserByToken = null;
-                loginUserByToken = createLoginUserByToken(token);
-
-                if(loginUserByToken==null){
+                if(createMockUser()!=null){
                     loginUserByToken = createMockUser();
+                }else{
+                    loginUserByToken = createLoginUserByToken(token);
                 }
                 if(loginUserByToken==null){
                     response.sendError(HttpServletResponse.SC_FORBIDDEN,"当前访问认证不通过,请先进行登录");
